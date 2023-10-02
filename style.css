@@ -5,6 +5,9 @@
 
 body {
     font-family: 'Barlow', sans-serif;
+    background-color: #EFF6FF;
+    color: #2A4A5C;
+    /* font-size: 18px; */
 }
 
 .main {
@@ -22,8 +25,76 @@ body {
 
 .logo {
     margin: 40px 0 0 40px;
+    width: 200px;
+    height: 40px;
 }
 
 .form-half {
     width: 50%;
+    padding: 100px 50px;
+}
+
+.form__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.disclaimer {
+    font-weight: normal;
+    color: #7B8A92;
+    margin-bottom: 40px;
+}
+
+.network-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.link {
+    width: 45%;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link__img {
+    position: absolute;
+    width: 20px;    
+}
+
+.link__text {
+    text-align: center;
+}
+
+.facebook {
+    background-color:  #255A9B;
+}
+
+.linkedin {
+    background-color: #0076B6;
+}
+
+.or {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.or::before, .or::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 150px;
+    background-color: #AFAFAF;
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.or::after {
+    margin-right: 0;
+    margin-left: 10px;
 }
