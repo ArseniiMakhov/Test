@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo-half {
+    width: 50%;
+    height: 100vh;
+    background: url("images/bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    margin: 40px 0 0 40px;
+}
+
+.form-half {
+    width: 50%;
+}
