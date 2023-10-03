@@ -14,7 +14,7 @@
         </section>
         <section class="form-half">
             <h1 class="form__title">Get iinto it today</h1>
-            <h3 class="disclaimer">There is no charge or obligation upon registration.</h3>
+            <h3 class="form__disclaimer">There is no charge or obligation upon registration.</h3>
             <div class="network-links">
                 <a class="facebook link" href="#">
                     <img src="images/facebook.svg" alt="" class="link__img">
@@ -26,6 +26,40 @@
                 </a>
             </div>
             <p class="or">or</p>
+            <form class="form" action="" method="post">
+                <div class="form__person">
+                <label class="person__label" for="email"> Email
+                    <input class="text-input" id="email" type="text">
+                </label>
+                <label class="person__label" for="phone"> Phone
+                    <input class="text-input" id="phone" type="text">
+                </label>
+                </div>
+                <h2 class="form__title">What type of investor are you?</h2>
+                <h4 class="form__disclaimer">Select the type of investor you are below.</h4>
+                <div class="form__investor">
+                    <label for="Individual" class="radio">
+                        <input type="radio" class="radio__input" id="Individual" name="radio" value="Individual">
+                        <span class="radio__circle"></span>
+                        Individual
+                    </label>
+                    <label for="Business" class="radio">
+                        <input type="radio" class="radio__input" id="Business" name="radio" value="Business">
+                        <span class="radio__circle"></span>
+                        Business
+                    </label>
+                    <label for="IRA" class="radio">
+                        <input type="radio" class="radio__input" id="IRA" name="radio" value="IRA">
+                        <span class="radio__circle"></span>
+                        IRA
+                    </label>
+                    <label for="Trust" class="radio">
+                        <input type="radio" class="radio__input" id="Trust" name="radio" value="Trust">
+                        <span class="radio__circle"></span>
+                        Trust
+                    </label>
+                </div>
+            </form>
         </section>
     </main>
 </body>

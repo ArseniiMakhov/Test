@@ -3,11 +3,14 @@
     box-sizing: border-box;
 }
 
+h1 { 
+    font-size: 2em; 
+}
+
 body {
     font-family: 'Barlow', sans-serif;
     background-color: #EFF6FF;
     color: #2A4A5C;
-    /* font-size: 18px; */
 }
 
 .main {
@@ -36,10 +39,9 @@ body {
 
 .form__title {
     margin-bottom: 20px;
-    font-size: 30px;
 }
 
-.disclaimer {
+.form__disclaimer {
     font-weight: normal;
     color: #7B8A92;
     margin-bottom: 40px;
@@ -56,6 +58,13 @@ body {
     padding: 15px 10px;
     text-decoration: none;
     color: #ffffff;
+    transition: 0.1s linear;
+    border-radius: 2px;
+}
+
+.link:hover, .link:focus {
+    outline: none;
+    transform: translateY(-10px);
 }
 
 .link__img {
@@ -97,4 +106,66 @@ body {
 .or::after {
     margin-right: 0;
     margin-left: 10px;
+}
+
+.form__person {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.person__label {
+    width: 45%;
+    border: 1px solid #afafaf;
+    padding: 5px 10px;
+    color: #7B8A92;
+}
+
+.text-input {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    border: none;
+    background-color:#EFF6FF ;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.person__label:has(> .text-input:focus) {
+    border-left: 1px solid #3698FB;
+}
+
+.form__investor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio {
+    padding: 0 25px;
+}
+
+.radio__input {
+    appearance: none;
+    position: absolute;
+}
+
+.radio__circle {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #EFF6FF;
+    border-radius: 50%;
+    border: 2px solid #afafaf;
+    margin-left: -25px;
+}
+
+.radio__input:checked + .radio__circle {
+    border: 4px solid #3698FB;
+}
+
+.radio__input:focus + .radio__circle {
+    outline: 1px solid #0076B6;
 }
