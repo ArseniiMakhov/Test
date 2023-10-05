@@ -148,6 +148,7 @@ body {
     font-weight: bold;
     position: relative;
     margin-bottom: 120px;
+    cursor: pointer;
 }
 
 .radio:not(:last-child) {
@@ -222,6 +223,7 @@ body {
     padding-left: 25px;
     position: relative;
     color: #7B8A92;
+    cursor: pointer;
 }
 
 .check__input {
@@ -250,3 +252,50 @@ body {
 .check__link {
     color: #3698FB;
 }
+
+.submit-btn {
+    display: block;
+    margin-top: 50px;
+    background-color: #3698FB;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+  @keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+  
