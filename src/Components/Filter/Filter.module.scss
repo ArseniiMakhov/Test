@@ -1,0 +1,16 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  height: 255px;
+  .filter-title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .filter-checkbox {
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 13px;
+  }
+}
