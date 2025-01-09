@@ -39,7 +39,7 @@ export const Ticket = ({item}) => {
   return (
     <div className={classes['ticket']}>
       <div  className={classes['ticket-left']}>
-        <img className={classes['ticket-logo']} alt='ticket logo' src={'src/assets/airlines.png'}></img>
+        <img className={classes['ticket-logo']} alt='ticket logo' src={'/public/airlines.png'}></img>
         <p  className={classes['ticket-price']}>Купить<br/> за {formatPrice(item.price, currencies)}</p>
       </div>
       <div className={classes['ticket-right']}>
@@ -50,7 +50,7 @@ export const Ticket = ({item}) => {
         </div>
         <div className={classes['ticket-middle']}>
           <p className={classes['ticket-stops']}>{stopsCheck(item.stops)}</p>
-          <img className={classes['ticket-arrow']} src='src/assets/arrow.png' alt='arrow'></img>
+          <img className={classes['ticket-arrow']} src='/public/arrow.png' alt='arrow'></img>
         </div>
         <div className={classes['ticket-to']}>
           <p className={classes['ticket-time']}>{item.arrival_time}</p>
