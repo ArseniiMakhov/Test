@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
 export const fetchTickets = createAsyncThunk('apiReducer/fetchTickets', async function () {
-  const response = await fetch('/public/tickets.json')
+  const response = await fetch('/tickets.json')
   if (!response.ok) {
     throw new Error('tickets loading error')
   }
